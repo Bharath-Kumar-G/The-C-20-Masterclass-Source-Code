@@ -11,6 +11,14 @@ int mulnumbers(int first_param, int second_param)
     return first_param * second_param;
 }
 
+int divnumbers(int first_param, int second_param)
+{
+    if (second_param == 0)
+        return 0;
+    return first_param / second_param;
+
+}
+
 int main(){
 
     int first_number {13}; // Statement
@@ -31,6 +39,7 @@ int main(){
     std::cout << "Sum : " << addNumbers(3,42) << std::endl;
     std::cout << "Diff : " << subnumbers(first_number, second_number) << std::endl;
     std::cout << "mul : " << mulnumbers(first_number, second_number) << std::endl;
+    std::cout << "div : " << divnumbers(first_number, second_number) << std::endl;
 
     return 0;
 }
